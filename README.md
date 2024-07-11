@@ -1,4 +1,3 @@
-Certainly! Here’s a structured guide for students, including questions and instructions to help them understand and practice network security assessment concepts using the Docker Compose setup.
 
 ## Network Security Assessment Guide
 

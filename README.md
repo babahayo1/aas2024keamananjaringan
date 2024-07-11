@@ -125,7 +125,7 @@ This guide will walk you through a series of exercises to help you understand an
 
 ## Report Submission
 
-After completing the network security assessment, students must submit a detailed report in PDF format and submit it to our learning application. The report should be clear and well-organized, including the following sections:
+After completing the network security assessment, students must submit a detailed report in PDF format and submit it to our learning application and the due date on 15 July 2024 The report should be clear and well-organized, including the following sections:
 
 1. **Introduction:**
    - Overview of the assessment and objectives.
@@ -173,13 +173,12 @@ This setup provides a practical environment for learning and practicing network 
 Feel free to contribute to this project by submitting pull requests or opening issues.
 
 Happy hacking!
-```
 
 ### Directory Structure
 
 Ensure your directory structure matches the following:
 
-```
+```sh
 network-security-assessment/
 │
 ├── docker-compose.yml
@@ -201,5 +200,3 @@ network-security-assessment/
 └── scanner/
     ├── Dockerfile
 ```
-
-This `README.md` provides students with clear instructions for setting up the network security assessment environment, performing the assessment, and preparing a detailed report.

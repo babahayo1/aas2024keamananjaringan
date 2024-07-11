@@ -168,7 +168,7 @@ Replace `[service_name]` with the name of the service (e.g., `db`, `vulnerable-w
 
 ## Conclusion
 
-This setup provides a practical environment for learning and practicing network security assessment techniques. Students can explore various aspects of network security, including scanning, enumeration, and exploitation, in a controlled environment.
+This setup provides a practical environment for learning and practicing basic network security assessment techniques. Students can explore various aspects of network security, including scanning, enumeration, and exploitation, in a controlled environment.
 
 Feel free to contribute to this project by submitting pull requests or opening issues.
 

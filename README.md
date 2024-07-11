@@ -17,13 +17,24 @@ This guide will walk you through a series of exercises to help you understand an
     docker-compose up --build
     ```
 
+3. **Verify the setup
+    ```sh
+    docker-compose ps
+    ```  
+    You should see the following services running:
+
+    - vulnerable-web
+    - db
+    - fileserver
+    - scanner
+
 3. **Access the vulnerable web application:**
     - Open a web browser and go to `http://localhost:8080`.
 
 4. **Access the scanner container:**
     - Open a terminal and run:
         ```sh
-        docker exec -it network-security-assessment_scanner_1 /bin/bash
+        docker exec -it aas2024keamananjaringan_scanner_1 /bin/bash
         ```
 
 ### Exercises
@@ -112,13 +123,83 @@ This guide will walk you through a series of exercises to help you understand an
 1. Which Metasploit modules were effective in exploiting the vulnerabilities you discovered?
 2. What additional information were you able to gather using Metasploit?
 
-### Conclusion
-By completing these exercises, you should have a better understanding of the basic principles of network security assessment, including scanning, enumeration, and exploitation. Reflect on the findings and consider the implications of these vulnerabilities in real-world scenarios.
+## Report Submission
 
-### Cleanup
-After completing the exercises, you can stop and remove the Docker containers with:
+After completing the network security assessment, students must submit a detailed report in PDF format and submit it to our learning application. The report should be clear and well-organized, including the following sections:
+
+1. **Introduction:**
+   - Overview of the assessment and objectives.
+
+2. **Scanning Results:**
+   - Screenshots or outputs of the scanning phase.
+   - Analysis of open ports and services discovered.
+
+3. **Enumeration Details:**
+   - Screenshots or outputs from enumeration tools.
+   - Detailed findings and information gathered.
+
+4. **Exploitation Attempts:**
+   - Step-by-step documentation of exploitation techniques used.
+   - Evidence of successful exploitation (screenshots, logs, etc.).
+
+5. **Conclusion:**
+   - Summary of findings.
+   - Recommendations for improving security based on the assessment.
+
+Ensure the report includes evidence such as screenshots and command outputs to support your findings and conclusions.
+
+## Cleanup
+
+To stop and remove all the services, run:
+
 ```sh
 docker-compose down
 ```
 
-This guide provides a comprehensive, hands-on learning experience for students to understand network security assessment concepts.
+## Troubleshooting
+
+If you encounter any issues, check the logs of the respective services:
+
+```sh
+docker-compose logs [service_name]
+```
+
+Replace `[service_name]` with the name of the service (e.g., `db`, `vulnerable-web`).
+
+## Conclusion
+
+This setup provides a practical environment for learning and practicing network security assessment techniques. Students can explore various aspects of network security, including scanning, enumeration, and exploitation, in a controlled environment.
+
+Feel free to contribute to this project by submitting pull requests or opening issues.
+
+Happy hacking!
+```
+
+### Directory Structure
+
+Ensure your directory structure matches the following:
+
+```
+network-security-assessment/
+│
+├── docker-compose.yml
+│
+├── README.md
+│
+├── vulnerable-web/
+│   ├── Dockerfile
+│   ├── app.py
+│
+├── db/
+│   ├── Dockerfile
+│   └── init.sql
+│
+├── fileserver/
+│   ├── Dockerfile
+│   └── smb.conf
+│
+└── scanner/
+    ├── Dockerfile
+```
+
+This `README.md` provides students with clear instructions for setting up the network security assessment environment, performing the assessment, and preparing a detailed report.

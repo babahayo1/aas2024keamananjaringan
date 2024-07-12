@@ -177,7 +177,7 @@ Feel free to contribute to this project by submitting pull requests or opening i
 Ensure your directory structure matches the following:
 
 ```sh
-network-security-assessment/
+Foldername/
 │
 ├── docker-compose.yml
 │

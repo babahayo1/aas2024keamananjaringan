@@ -1,5 +1,5 @@
 
-## Network Security Assessment Guide
+## Network Security Assessment Guide (AAS 2024)
 
 ### Overview
 This guide will walk you through a series of exercises to help you understand and practice various aspects of network security assessment, including scanning, enumeration, and exploitation. You will use the provided Docker Compose setup to explore a simulated network environment.

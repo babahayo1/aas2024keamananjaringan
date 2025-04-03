@@ -78,8 +78,8 @@ This guide will walk you through a series of exercises to help you understand an
     ```
 
 **Questions:**
-1. How can you confirm the presence of an SQL injection vulnerability?
-2. What data can you extract from the database using SQL injection?
+1. how can you confirm the presence of an SQL injection vulnerability?
+2. what data can you extract from the database using SQL injection?
 
 #### 4. Enumerating the File Server
 **Objective:** Enumerate the file shares available on the Samba server.
